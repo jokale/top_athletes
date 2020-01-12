@@ -1,1 +1,2 @@
-puts "Hello guys welcome to the top 100 athletes list!"
+require_relative "../lib/top_athletes"
+
