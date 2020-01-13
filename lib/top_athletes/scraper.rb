@@ -1,9 +1,8 @@
 class Scraper 
   
   def self.scrape_athletes 
-    page = Nokogiri::HTML(open("https://www.thestreet.com/lifestyle/sports/highest-paid-female-athletes-15064096")) 
-    
-    # https://www.businessinsider.com/iconic-female-athletes-women-sports-2019-7?r=US&IR=T
+    page = Nokogiri::HTML(open("https://www.businessinsider.com/iconic-female-athletes-women-sports-2019-7?r=US&IR=T")
+   
     
     # page.css(".slide-title-text").each_with_index do |top_athletes, index|
       
@@ -11,6 +10,6 @@ class Scraper
     #   # page.css(".slide-title-text")
    
     binding.pry 
-    # end 
+
   end 
 end 
