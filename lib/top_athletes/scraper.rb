@@ -6,8 +6,11 @@ class Scraper
     
     
     page.css(".slide-title-text").each do |athletes|
+   
+    binding.pry 
+    end 
       
-      binding.pry 
+     
   end 
   
 end 
