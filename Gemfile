@@ -4,5 +4,6 @@ source "https://rubygems.org"
 gemspec
 
 gem "nokogiri"
-gem "open-uri"
+# gem 'open-uri'
+gem 'rake(~>10.0)'
 gem "pry"
