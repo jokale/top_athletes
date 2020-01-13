@@ -1,9 +1,9 @@
 class Scraper 
   
   def self.scrape_athletes 
-    page = Nokogiri::HTML(open("http://www.espn.com/espn/feature/story/_/id/26113613/espn-world-fame-100-2019")) 
+    page = Nokogiri::HTML(open("https://www.ranker.com/list/the-all-around-best-athletes-of-2019/pedro-cerrano")) 
     
-    binding.pry 
+    # binding.pry 
     
   end 
   
