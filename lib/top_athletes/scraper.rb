@@ -5,7 +5,8 @@ class Scraper
     
     
     
-    page.css(".slide-title-text").each do |athletes|
+    page.css(".slide-title-text").each_with_index do |top_athletes|
+      page.css(".slide-title-text")
    
     binding.pry 
     end 
