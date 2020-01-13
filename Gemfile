@@ -5,5 +5,5 @@ gemspec
 
 gem "nokogiri"
 # gem 'open-uri'
-gem 'rake(~>10.0)'
+# gem 'rake(~>10.0)'
 gem "pry"
