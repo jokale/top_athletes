@@ -1,5 +1,6 @@
 require "nokogiri"
 require "open-uri"
+require "pry"
 require_relative "./top_athletes/version"
 require_relative "./top_athletes/cli"
 require_relative "./top_athletes/scraper"
