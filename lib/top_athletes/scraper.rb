@@ -9,7 +9,7 @@ class Scraper
  athlete = Athlete.new(title)
    
    
-    # binding.pry 
+   # binding.pry 
   end 
 
   end 
