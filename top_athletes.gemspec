@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "A short summary"
   spec.description   = "A longer description!"
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/jokale/top_athletes"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
