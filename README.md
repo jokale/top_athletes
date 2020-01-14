@@ -1,5 +1,6 @@
-Hello guys welcome to an interactive CLI scraper gem listing the worlds top 100 athletes of 2019!
 # TopAthletes
+Hello guys welcome to an interactive CLI scraper gem listing the worlds top female athletes of the century!
+
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/top_athletes`. To experiment with that code, run `bin/console` for an interactive prompt.
 
