@@ -1,12 +1,11 @@
 class CLI 
   def start  
     puts "Hey there and welcome to the most iconic female athletes of the century!"
-    puts "Pick a number from 1 to 36 to see which athletes rank"
+    puts "Pick an athelete to see more details"
     Scraper.scrape_athletes
     
     athletes = Athletes.all 
-    athletes.each_with_index(1) do |athletes, index| puts "#{index}.#{athletes.name}" 
+    athletes.each_with_index do |athletes, index| puts "#{index}.#{athletes.name}" 
     end 
   end 
-  
 end 
