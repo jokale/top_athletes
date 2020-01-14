@@ -7,6 +7,7 @@ class CLI
     athletes = Athletes.all 
     athletes.each do |athletes| 
       puts "#{athletes.title}" 
+    end 
   end 
   
 end 
