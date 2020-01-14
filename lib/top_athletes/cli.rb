@@ -5,8 +5,7 @@ class CLI
     Scraper.scrape_athletes
     
     athletes = Athletes.all 
-    athletes.each do |athletes| 
-      puts "#{athletes.title}" 
+    athletes.each do |athletes| puts "#{athletes.name}" 
     end 
   end 
   
