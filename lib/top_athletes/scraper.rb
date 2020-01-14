@@ -5,7 +5,7 @@ class Scraper
    
    page.css(".slide-title-text").each_with_index  do  |top_athlete, index|
      name = page.css(".slide-title-text")[index].text
-     
+    
      athlete = Athletes.new(name)
    
  
