@@ -9,7 +9,8 @@ class Scraper
      athlete = Athletes.new(name)
    
 
- 
+ end 
+end 
 end 
 
 def self.athlete_description 
@@ -20,8 +21,7 @@ def self.athlete_description
  #
  description = page.css("div.slide-layout.clearfix p")[index].text
  
- athlete_description = 
+ athlete_description = Athletes.new(description)
 end 
 
- end 
 end 
