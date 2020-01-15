@@ -2,7 +2,7 @@
 Hello guys and  welcome to an interactive CLI scraper gem listing the worlds 36 top female athletes of the century as per Business Insider.
 
 
-## Installion 
+## Installation 
 
 Add this line to your application's Gemfile:
 
