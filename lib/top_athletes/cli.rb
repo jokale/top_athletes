@@ -5,7 +5,8 @@ class CLI
     Scraper.scrape_athletes
     
     athletes = Athletes.all 
-    athletes.each_with_index do |athletes, index| puts "#{index}.#{athletes.name}" 
+    athletes.each.with_index(1) do |athletes, index| puts "#{index}.#{athletes.name}" 
+
     end 
   end 
 end 

@@ -1,9 +1,9 @@
 class Athletes 
   @@all = []
-  attr_accessor :name, :description 
-  def initialize(name, description)
+  attr_accessor :name
+  def initialize(name)
     @name = name 
-    @description = description
+    # @description = description
     @@all << self 
   end 
   

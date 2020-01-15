@@ -8,20 +8,17 @@ class Scraper
     
      athlete = Athletes.new(name)
    
-
- end 
 end 
 end 
+end 
 
-def self.athlete_description 
-  
-   page = Nokogiri::HTML(open("https://www.businessinsider.com/iconic-female-athletes-women-sports-2019-7?r=US&IR=T"))
-  
-  page.css("div.slide-layout.clearfix p").each_with_index do |top_athlete_description, index|
- #
- description = page.css("div.slide-layout.clearfix p")[index].text
+# def self.scrape_description 
+#   page = Nokogiri::HTML(open("https://www.businessinsider.com/iconic-female-athletes-women-sports-2019-7?r=US&IR=T"))
+#   page.css("div.slide-layout.clearfix p").each_with_index do |top_athlete, index|
+# description = page.css("div.slide-layout.clearfix p")[index].text
  
- athlete_description = Athletes.new(description)
-end 
+# athlete_description = Athletes.new(description)
+# end 
+# end 
 
-end 
+
