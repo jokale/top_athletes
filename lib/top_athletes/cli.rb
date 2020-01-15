@@ -1,10 +1,12 @@
 class CLI 
   def start  
-    puts "Hey there and welcome to the 36 most iconic female athletes of the century! Below you'll see a list of top athletes as per Business Insider"
-    
+    puts "Hey there and welcome to the 36 most iconic female athletes of the century"
+    puts "Below you'll see a list of top athletes as per Business Insider"
+    puts ""
     puts "Want to know more about a specific athlete on the list?"
-    
+    puts ""
     puts "Pick any number from 1-36 to see a short summary of the athlete"
+    puts ""
     Scraper.scrape_athletes
     
     athletes = Athletes.all 
@@ -16,8 +18,15 @@ class CLI
     
 puts ""
 
-# if user_input == 1...36 
-#   puts 
-    end 
+# # if user_input == 1...36 
+# #   puts 
+
+# Scraper.scrape_description
+
+# athletes = Athletes.all 
+# athletes.each.with_index(1) do |athlete, index, description| puts "#{index}.#{athletes.name} #{athletes.description
+# }"
+#     end 
   end 
+end 
 end 
