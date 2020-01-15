@@ -15,6 +15,9 @@ class CLI
     # I also want to create a range if possible to print only number 1 - 36 and if possible have a url for the most paid athletes 
     
 puts ""
+
+# if user_input == 1...36 
+#   puts 
     end 
   end 
 end 
