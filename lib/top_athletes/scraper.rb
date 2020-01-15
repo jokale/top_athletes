@@ -16,7 +16,11 @@ def self.athlete_description
   
    page = Nokogiri::HTML(open("https://www.businessinsider.com/iconic-female-athletes-women-sports-2019-7?r=US&IR=T"))
   
- # athlete paragraphs wilma page.css("div.slide-layout.clearfix p")[0].text
+  page.css("div.slide-layout.clearfix p").each_with_index do |top_athlete_description, index|
+ #
+ description = page.css("div.slide-layout.clearfix p")[index].text
+ 
+ athlete_description = 
 end 
 
  end 
