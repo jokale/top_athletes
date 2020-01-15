@@ -5,7 +5,7 @@ class CLI
     puts ""
     puts "Want to know more about a specific athlete on the list?"
     puts ""
-    puts "Pick any number from 1-36 to see a short summary of the athlete"
+    puts "Pick any number from 1-36 to see a short summary of the athlete: their orgin and the sport they play!"
     puts ""
     Scraper.scrape_athletes
     
