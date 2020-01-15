@@ -1,6 +1,6 @@
 class CLI 
   def start  
-    puts "Hey there and welcome to the most iconic female athletes of the century!"
+    puts "Hey there and welcome to the 36 most iconic female athletes of the century!"
     puts "Pick an athelete to see more details"
     Scraper.scrape_athletes
     
