@@ -3,7 +3,6 @@ class Athletes
   attr_accessor :name, :description
   def initialize(name)
     @name = name 
-    @description = description
     @@all << self 
   end 
   
