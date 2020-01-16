@@ -26,17 +26,18 @@ class CLI
     if input.to_i.between?(1, Athletes.all.size)
         index = input.to_i - 1
         
-       if input.to.i = 13 
+       if input == "13" 
          puts "Sorry no top 13th athlete of the century as there are two athletes at number 16!"
 
 athletes = Athletes.all[index]
-        Scraper.scrape_athletes(athletes)
+        Scraper.scrape_athletes
         display_details(athletes)
       else
         puts "Goodbye, hope you have a great day!"
       end
     end
   end
+end 
 
   def display_details(athletes)
     puts ""
