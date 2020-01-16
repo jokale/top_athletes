@@ -14,14 +14,16 @@ class CLI
     
     athletes = Athletes.all 
     
-    athletes.each do |athletes|
-      
-    puts "#{athletes.name}" 
+    athletes.each.with_index +1 do |athletes, index|
+      if index < 37 
+      puts "#{index}. #{athletes.name}" 
+    
     #the 3 lines of code above puts the athlete names with their index number 
        # if input == "13" 
       #   puts "Sorry no top 13th athlete of the century as there are two athletes at number 16!"
 
   end 
+end 
   
     input = gets.strip
       
