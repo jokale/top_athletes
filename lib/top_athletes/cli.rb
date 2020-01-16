@@ -14,11 +14,13 @@ class CLI
     
     athletes = Athletes.all 
     
-    athletes.each.with_index(1) do |athletes, index|
+    athletes.each do |athletes|
       
-    puts "#{index}.#{athletes.name}" 
+    puts "#.#{athletes.name}" 
     #the 3 lines of code above puts the athlete names with their index number 
-    
+       # if input == "13" 
+      #   puts "Sorry no top 13th athlete of the century as there are two athletes at number 16!"
+
   end 
   
     input = gets.strip
@@ -26,9 +28,7 @@ class CLI
     if input.to_i.between?(1, Athletes.all.size)
         index = input.to_i - 1
         
-       if input == "13" 
-         puts "Sorry no top 13th athlete of the century as there are two athletes at number 16!"
-
+   
 athletes = Athletes.all[index]
         Scraper.scrape_athletes
         display_details(athletes)
@@ -37,13 +37,11 @@ athletes = Athletes.all[index]
       end
     end
   end
-end 
 
   def display_details(athletes)
     puts ""
     puts "description: #{athletes.description}"
-    
-    binding.pry 
+
   end
 
 end
