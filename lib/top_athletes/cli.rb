@@ -16,7 +16,7 @@ class CLI
     
     athletes.each do |athletes|
       
-    puts "#.#{athletes.name}" 
+    puts "#{athletes.name}" 
     #the 3 lines of code above puts the athlete names with their index number 
        # if input == "13" 
       #   puts "Sorry no top 13th athlete of the century as there are two athletes at number 16!"
@@ -27,6 +27,12 @@ class CLI
       
     if input.to_i.between?(1, Athletes.all.size)
         index = input.to_i - 1
+    
+    #!= {athletes.name} 
+      
+    #   puts "Sorry this athlete is not on the list please type another name"
+      
+     
         
    
 athletes = Athletes.all[index]
