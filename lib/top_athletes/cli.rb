@@ -1,16 +1,34 @@
 class CLI 
   def start  
-    puts "Hey there and welcome to the 36 most iconic female athletes of the century"
-    puts "Below you'll see a list of top athletes as per Business Insider"
-    puts ""
-    puts "Want to know more about a specific athlete on the list?"
-    puts ""
-    puts "Pick any number from 1-36 to see a short summary of the athlete: their orgin and the sport they play!"
-    puts ""
+    puts "Hey there and welcome to the 36 most iconic female athletes of the century as per Business Insider"
+    # puts "Below you'll see a list of top athletes as per Business Insider"
+    # puts ""
+    # puts "Want to know more about a specific athlete on the list?"
+    # puts ""
+    # puts "Pick any number from 1-36 to see a short summary of the athlete: their orgin and the sport they play!"
+    # puts ""
     Scraper.scrape_athletes
+    menu
+  end 
+  
+  def menu 
+    input == ""
+    until input == "exit"
+    puts "Please select an athlete by number to view the details or enter 'exit' to quit: "
     
     athletes = Athletes.all 
-    athletes.each.with_index(1) do |athletes, index| puts "#{index}.#{athletes.name}" 
+    
+    athletes.each.with_index(1) do |athletes, index|
+      
+    puts "#{index}.#{athletes.name}" 
+    
+  end 
+  
+     input = gets.strip
+      
+    if input.to_i.between?(1, Athletes.all.size)
+        index = input.to_i - 1
+
     
     
     #I want the user to be able to pick the index number or even name of athlete then they are able to get information sbout the information
@@ -27,6 +45,9 @@ puts ""
 # athletes.each.with_index(1) do |athlete, index, description| puts "#{index}.#{athletes.name} #{athletes.description
 # }"
 #     end 
+
+
+  
   end 
 end 
 end 
