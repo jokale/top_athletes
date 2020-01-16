@@ -1,3 +1,5 @@
+require "pry"
+
 class CLI 
   def start  
     puts "Hey there and welcome to the 36 most iconic female athletes of the century as per Business Insider"
@@ -6,7 +8,7 @@ class CLI
   end 
   
   def menu 
-    input == ""
+    input = ""
     until input == "exit"
     puts "Please select an athlete by number to view the details or enter 'exit' to quit: "
     
@@ -22,6 +24,8 @@ class CLI
       
     if input.to_i.between?(1, Athletes.all.size)
         index = input.to_i - 1
+        
+        binding.pry 
 
 athletes = Athletes.all[index]
         Scraper.scrape_athletes(athletes)
@@ -35,6 +39,7 @@ athletes = Athletes.all[index]
   def display_details(athletes)
     puts ""
     puts "description: #{athletes.description}"
+    
   end
 
 end
@@ -43,7 +48,6 @@ end
     #I want the user to be able to pick the index number or even name of athlete then they are able to get information sbout the information
     # I also want to create a range if possible to print only number 1 - 36 and if possible have a url for the most paid athletes 
     
-puts ""
 
 # # if user_input == 1...36 
 # #   puts 
@@ -56,7 +60,4 @@ puts ""
 #     end 
 
 
-  
-  end 
-end 
-end 
+ 
