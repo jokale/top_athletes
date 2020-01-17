@@ -6,6 +6,7 @@ class CLI
     puts "Hey there and welcome to the 36 most iconic female athletes of the century as per Business Insider"
     Scraper.scrape_athletes
     menu
+    Scraper.scrape_description
   end 
   
   def menu 
@@ -29,7 +30,7 @@ end
     
    
 athletes = Athletes.all[index]
-        Scraper.scrape_description
+        # Scraper.scrape_description
         display_details(athletes)
       else
         puts "Goodbye, hope you have a great day!"
@@ -39,7 +40,9 @@ athletes = Athletes.all[index]
 
   def display_details(athletes)
     puts ""
-    puts "description: #{athletes.description}"
+    puts Scraper.scrape_description
+  else 
+    puts "Would you like to find out more about another athlete? Write another number according to the top 36!"
 
   end
 
