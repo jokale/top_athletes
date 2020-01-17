@@ -48,7 +48,7 @@ athletes = Athletes.all[index]
     puts ""
     description = Scraper.scrape_description.text.strip 
     
-    name = Scraper.scrape_athletes.text
+    
         
      puts  "Athlete description: #{description}"
      puts ""
