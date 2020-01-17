@@ -38,17 +38,14 @@ athletes = Athletes.all[index]
     end
   end
 
+
   def display_details(athletes)
     puts ""
-    puts Scraper.scrape_description
-  else 
-    puts "Would you like to find out more about another athlete? Write another number according to the top 36!"
+    description = Scraper.scrape_description
+     puts  "#{description}"
+    puts "Would you like to find out more about another athlete?"
+  end 
 
-  end
 
-end
+end 
     
- 
-
-
- 
