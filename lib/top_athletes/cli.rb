@@ -36,7 +36,7 @@ end
     
    
 athletes = Athletes.all[index]
-        # Scraper.scrape_description
+  
         display_details(athletes)
       else
         puts "Goodbye, hope you have a great day! Who knows maybe you'll be on this list soon!"
@@ -44,10 +44,10 @@ athletes = Athletes.all[index]
     end
   end
 
-#####33
   def display_details(athletes)
     puts ""
     description = Scraper.scrape_description.text.strip 
+    
     name = Scraper.scrape_athletes.text
         
      puts  "Athlete description: #{description}"
