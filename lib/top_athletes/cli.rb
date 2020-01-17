@@ -12,13 +12,19 @@ class CLI
   def menu 
     input = ""
     until input == "exit"
+    puts ""
     puts "Please select an athlete by number to view the details or enter 'exit' to quit "
     
     athletes = Athletes.all 
     
+    puts ""
+    
+   
+      
     athletes.each.with_index +1 do |athletes, index|
       if index < 37 
       puts "#{index}. #{athletes.name}" 
+      
   
   end 
 end 
@@ -41,12 +47,11 @@ athletes = Athletes.all[index]
 #####33
   def display_details(athletes)
     puts ""
-    description = Scraper.scrape_description.text.strip
-    athletes = Athletes.all 
-   
-     puts  "Athlete description:
-     #{name}. #{description}"
-     
+    description = Scraper.scrape_description.text.strip 
+    name = Scraper.scrape_athletes.text
+        
+     puts  "Athlete description: #{description}"
+     puts ""
      
     puts "Would you like to find out more about another athlete?"
     
