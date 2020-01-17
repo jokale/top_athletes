@@ -41,13 +41,16 @@ athletes = Athletes.all[index]
 #####33
   def display_details(athletes)
     puts ""
-    description = Scraper.scrape_description
+    description = Scraper.scrape_description.text.strip
+    athletes = Athletes.all 
    
-     puts  " #{description}"
+     puts  "Athlete description:
+     #{name}. #{description}"
+     
      
     puts "Would you like to find out more about another athlete?"
     
-    binding.pry 
+  
   end 
 
 
