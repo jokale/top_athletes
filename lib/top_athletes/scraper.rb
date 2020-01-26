@@ -13,7 +13,7 @@ def self.scrape_athletes
 def self.scrape_description 
  page = Nokogiri::HTML(open("https://www.businessinsider.com/iconic-female-athletes-women-sports-2019-7?r=US&IR=T"))
  page.css("div.slide-layout.clearfix p").each.with_index do |description, index|
-description = page.css("div.slide-layout.clearfix p")[index].text
+    description = page.css("div.slide-layout.clearfix p")[index].text
  end 
  
 end

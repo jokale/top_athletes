@@ -10,4 +10,11 @@ class Athletes
     @@all 
   end 
   
+  def self.say_name 
+    @name << self 
+  end 
+
+
 end 
+
+

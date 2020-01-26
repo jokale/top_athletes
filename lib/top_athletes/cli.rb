@@ -23,10 +23,14 @@ class CLI
       
     athletes.each.with_index +1 do |athletes, index|
       if index < 37 
+        if index == 13
+          puts "#{index}. Missy Franklin"
+          next
+        end
       puts "#{index}. #{athletes.name}" 
       
-  
-  end 
+  end
+    
 end 
   
     input = gets.strip
