@@ -17,7 +17,5 @@ class Athletes
 end 
 
 
-end 
 
 
-name = 
