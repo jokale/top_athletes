@@ -1,3 +1,4 @@
+require 'pry'
 class Athletes 
   @@all = []
   attr_accessor :name, :description
@@ -11,10 +12,12 @@ class Athletes
   end 
   
   def self.say_name 
-    @name << self 
+    return self.new
   end 
+end 
 
 
 end 
 
 
+name = 
