@@ -7,15 +7,20 @@ class Athletes
     @@all << self 
   end 
   
-  def self.all 
-    @@all 
+ def self.all 
+   @@all 
   end 
   
   def self.say_name 
-    return self.new
+     Athletes.all.collect {|athlete| athlete.name}
   end 
+
+
 end 
 
+
+
+ 
 
 
 

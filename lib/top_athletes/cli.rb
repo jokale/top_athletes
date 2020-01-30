@@ -16,7 +16,7 @@ class CLI
     puts "Please select an athlete by number to view the details or enter 'exit' to quit "
     
     athletes = Athletes.all 
-    
+
     puts ""
     
    
@@ -52,9 +52,10 @@ athletes = Athletes.all[index]
     puts ""
     description = Scraper.scrape_description.text.strip 
     
-    
         
      puts  "Athlete description: #{description}"
+
+
      puts ""
      
     puts "Would you like to find out more about another athlete?"

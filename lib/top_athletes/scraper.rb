@@ -12,6 +12,9 @@ def self.scrape_athletes
 
 def self.scrape_description 
  page = Nokogiri::HTML(open("https://www.businessinsider.com/iconic-female-athletes-women-sports-2019-7?r=US&IR=T"))
+
+
+ #The issue is in the CSS element I have scraped 
  page.css("div.slide-layout.clearfix p").each.with_index do |description, index|
     description = page.css("div.slide-layout.clearfix p")[index].text
  end 
