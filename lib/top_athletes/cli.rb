@@ -46,6 +46,7 @@ athletes = Athletes.all[index]
   end
 
   def display_details(input)
+    puts ""
     if input == 1 
       puts first_description = Scraper.scrape_description[0..2].text.strip 
     elsif input == 2
