@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require_relative '../lib/top_athletes'
 
 CLI.new.start  
