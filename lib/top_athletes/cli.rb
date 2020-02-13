@@ -3,7 +3,6 @@ class CLI
   def start  
     puts "Hey there and welcome to the 36 most iconic female athletes of the century as per Business Insider"
     Scraper.new 
-    binding.pry 
     menu
   end 
   
@@ -37,24 +36,25 @@ end
         index = input.to_i - 1
     
    
-athletes = Athletes.all[index]
+        athlete = Athletes.all[index]
   
-        display_details(index+ 1)
+        display_details(athlete)
       else
         puts "Goodbye, hope you have a great day! Who knows maybe you'll be on this list soon!"
       end
     end
   end
 
-  def display_details(input)
-    #1 use the input to get athlete from Athletes.all
+  def display_details(athlete)
     #2 display details of that athlete 
     #3 ask if they want to see more 
-    
-    
-  puts "Would you like to find out more about another athlete?"
+    puts "Name: #{athlete.name} \n Description: #{athlete.description}""  <-----"
+    # puts "#{Athletes.all[input]}  ========="
+
+      puts "Would you like to find out more about another athlete?"
   
-  end     
+   end   
+  
 
 
 
